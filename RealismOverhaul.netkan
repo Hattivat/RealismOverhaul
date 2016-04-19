@@ -10,11 +10,9 @@
     "release_status" : "stable",
     "depends" : [
 		{ "name" : "AdvancedJetEngine" },
-		{ "name" : "CrossFeedEnabler" },
 		{ "name" : "FerramAerospaceResearch" },
 		{ "name" : "KerbalJointReinforcement" },
 		{ "name" : "ModuleManager" },
-		{ "name" : "ModuleRCSFX" },
 		{ "name" : "RealChute" },
 		{ "name" : "RealFuels" },
 		{ "name" : "RealHeat" },
@@ -22,37 +20,37 @@
 		{ "name" : "SmokeScreen" }
     ],
     "recommends" : [
-		{ "name" : "B9AerospaceProceduralParts" },
-		{ "name" : "BetterBuoyancy" },
+		{ "name" : "B9-PWings-Fork" },
 		{ "name" : "ConnectedLivingSpace" },
 		{ "name" : "DeadlyReentry" },
-		{ "name" : "FilterExtensions" },
 		{ "name" : "HangarExtender" },
 		{ "name" : "KSP-AVC" },
 		{ "name" : "MechJeb2" },
-		{ "name" : "ModuleFixer" },
 		{ "name" : "ProceduralFairings" },
 		{ "name" : "ProceduralFairings-ForEverything" },
 		{ "name" : "ProceduralParts" },
+		{ "name" : "PersistentRotation" },
+		{ "name" : "RCSBuildAid" },
 		{ "name" : "RealSolarSystem" },
+		{ "name" : "KSCSwitcher" },
 		{ "name" : "RemoteTech" },
-		{ "name" : "RemoteTech-Config-RSS" },
 		{ "name" : "SemiSaturatableRW" },
 		{ "name" : "TACLS" },
 		{ "name" : "TACLS-Config-RealismOverhaul" },
-		{ "name" : "TestFlight" },
-		{ "name" : "TestFlightConfigRO" },
 		{ "name" : "TextureReplacer" },
-		{ "name" : "Toolbar" }
+		{ "name" : "Toolbar" },
+		{ "name" : "VenStockRevamp"}
     ],
     "suggests"   : [
 		{ "name" : "Service-Compartments-6S" },
 		{ "name" : "AIESAerospace-Unofficial" },
 		{ "name" : "ALCOR" },
+		{ "name" : "AtomicAge" },
 		{ "name" : "DMagicOrbitalScience" },
 		{ "name" : "FASA" },
 		{ "name" : "KAS" },
 		{ "name" : "KWRocketry" },
+		{ "name" : "FilterExtensions" },
 		{ "name" : "LazTekSpaceXExploration" },
 		{ "name" : "LazTekSpaceXHistoric" },
 		{ "name" : "LazTekSpaceXLaunch" },
@@ -62,23 +60,30 @@
 		{ "name" : "NearFutureSolar" },
 		{ "name" : "NearFutureSpacecraft" },
 		{ "name" : "PorkjetHabitats" },
-		{ "name" : "Proton-Bobcat" },
 		{ "name" : "Proton-OLDD" },
+		{ "name" : "RealScaleBoosters" },
 		{ "name" : "RLA-Stockalike" },
 		{ "name" : "RocketdyneF-1" },
 		{ "name" : "SCANsat" },
 		{ "name" : "SovietEngines" },
-		{ "name" : "SpaceFactory-Voskhod-unofficial" },
-		{ "name" : "SpaceFactory-Vostok-unofficial" },
+		{ "name" : "RN-SalyutStations-SoyuzFerries" },
+		{ "name" : "RN-Skylab" },
+		{ "name" : "RN-SovietProbes" },
+		{ "name" : "RN-SovietRockets" },
+		{ "name" : "RN-USProbesPack" },
+		{ "name" : "RN-USRockets" },
 		{ "name" : "SXT" },
-		{ "name" : "UniversalStorage" },
-		{ "name" : "VenStockRevamp"}
+		{ "name" : "Taerobee" },
+		{ "name" : "Tantares" },
+		{ "name" : "TantaresLV" },
+		{ "name" : "UniversalStorage" }
     ],
-        "provides"  : [ "RealPlumeConfigs", "RealFuels-Engine-Configs" ],
-	"conflicts"	:	[
+    "provides"  : [ "RealPlumeConfigs", "RealFuels-Engine-Configs", "TestFlightConfig" ],
+    "conflicts"	:	[
 		{ "name" : "TweakableEverything" },
-		{ "name" : "RealPlumeConfigs" }
-	],
+		{ "name" : "RealPlumeConfigs" },
+		{ "name" : "TestFlightConfig" }
+    ],
     "resources" : {
         "homepage" : "http://forum.kerbalspaceprogram.com/threads/99966"
     },
@@ -86,11 +91,6 @@
         {
             "file"       : "GameData/RealismOverhaul",
             "install_to" : "GameData"
-        },
-        {
-            "file"       : "GameData/KAS",
-            "install_to" : "GameData",
-            "comment"    : "KAS config, does not overwrite"
         },
         {
             "file"       : "GameData/EngineGroupController",
@@ -109,4 +109,3 @@
         }
     ]
 }
-
